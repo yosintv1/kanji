@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Free JLPT N5 Kanji Test - Practice Japanese Kanji Online | KanjiTest.Online</title>
+  <meta name="description" content="Practice for your JLPT N5 exam with our free Kanji test #3. Includes 20 questions with answers, explanations, and interactive learning features for Japanese beginners." />
+  <meta name="keywords" content="JLPT N5, Kanji test, Japanese language test, free Kanji quiz, N5 practice test, Japanese kanji for beginners" />
+  <meta name="author" content="KanjiTest.Online" />
+  <meta name="robots" content="index, follow" />
+  
+  <link href='/favicon.ico' rel='icon' type='image/x-icon'/>
+  <link rel="canonical" href="https://kanjitest.online/n5-kanji-test3" /> 
+  <meta property="og:title" content="Free JLPT N5 Kanji Test 3 - Practice Japanese Kanji Online" />
+  <meta property="og:description" content="Practice for your JLPT N5 exam with our free Kanji test #3. Includes 20 questions with answers and explanations." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://kanjitest.online/n5-kanji-test3" /> 
+  <meta property="og:image" content="https://kanjitest.online/image.jpg" />
+  <meta property="og:site_name" content="KanjiTest.Online" />
+  
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Free JLPT N5 Kanji Test 3 - Practice Japanese Kanji Online" />
+  <meta name="twitter:description" content="Practice for your JLPT N5 exam with our free Kanji test #3. Includes 20 questions with answers and explanations." />
+  <meta name="twitter:image" content="https://kanjitest.online/image.jpg" />
+  
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Quiz",
+    "name": "JLPT N5 Kanji Test 3",
+    "description": "Practice test for Japanese Language Proficiency Test N5 Kanji",
+    "educationalLevel": "beginner",
+    "hasPart": [
+      {
+        "@type": "Question",
+        "eduQuestionType": "Multiple choice",
+        "text": "What is the reading for 日本 in this sentence: 日本の首都は東京です。",
+        "answerExplanation": "日本 is read as にほん (Nihon) meaning Japan",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "にほん"
+        }
+      },
+      {
+        "@type": "Question",
+        "eduQuestionType": "Multiple choice",
+        "text": "What is the reading for 一月 in this sentence: 一月は一番寒い月です。",
+        "answerExplanation": "一月 is read as いちがつ (Ichigatsu) meaning January",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "いちがつ"
+        }
+      }
+    ],
+    "assesses": "Japanese language proficiency at N5 level",
+    "learningResourceType": "Practice test",
+    "typicalAgeRange": "14-99"
+  }
+  </script>
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    body {
+      background-color: #FFFFFF;
+      color: #000;
+    }
+    .navbar {
+      background-color: #4A2C2A;
+    }
+    .navbar-brand {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #fff;
+    }
+    .nav-link {
+      color: #fff !important;
+    }
+    .nav-link:hover {
+      color: #ffcc00 !important;
+    }
+    .sidebar {
+      background: #fff5f5;
+      border-left: 3px solid #4A2C2A;
+      padding: 25px 20px;
+      height: 100%;
+      box-shadow: 2px 0 8px rgb(74 44 42 / 0.1);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      border-radius: 8px 0 0 8px;
+      margin-top: 80px; /* shift sidebar down */
+    }
+    .sidebar h5 {
+      color: #4A2C2A;
+      font-weight: 500;
+      margin-bottom: 15px;
+      border-bottom: 2px solid #4A2C2A;
+      padding-bottom: 8px;
+      letter-spacing: 1px;
+    }
+    .sidebar nav a {
+      display: block;
+      margin: 8px 0;
+      padding: 8px 12px;
+      border-radius: 5px;
+      font-weight: 500;
+      color: #7a3e3a;
+      text-decoration: none;
+      transition: all 0.25s ease-in-out;
+      box-shadow: inset 0 0 0 0 #4A2C2A;
+    }
+    .sidebar nav a:hover,
+    .sidebar nav a:focus {
+      color: #fff;
+      background-color: #4A2C2A;
+      box-shadow: inset 150px 0 0 0 #4A2C2A;
+      text-decoration: none;
+    }
+    .quiz-container {
+      max-width: 900px;
+      margin: auto;
+      padding: 20px;
+    }
+    .question {
+      margin-bottom: 25px;
+      padding: 15px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      background: #f1f1f1;
+      /* 2x2 grid layout */
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px 15px;
+    }
+    .question p {
+      font-weight: 550;
+      font-size: 1.2rem;
+      grid-column: span 2;
+      margin-bottom: 15px;
+    }
+    .quiz-option {
+      margin: 0;
+      width: 100%;
+      text-align: left;
+      user-select: none;
+      transition: background-color 0.3s ease;
+    }
+    .feedback {
+      grid-column: span 2;
+      font-weight: 600;
+      margin-top: 10px;
+      font-size: 1rem;
+      user-select: none;
+    }
+    .feedback.correct-text {
+      color: #155724;
+    }
+    .feedback.incorrect-text {
+      color: #721c24;
+    }
+    .footer-bg {
+      background-color: #1a1a1a;
+    }
+    .text-muted {
+      color: #bbb !important; /* ensure visible */
+    }
+    header, .container {
+      max-width: 900px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    
+    .not-found-container {
+      max-width: 900px;
+      margin: 100px auto 50px auto;
+      padding: 40px;
+      text-align: center;
+    }
+    .not-found-container h1 {
+      font-size: 4rem;
+      font-weight: 700;
+    }
+    .not-found-container p {
+      font-size: 1.25rem;
+    }
+    
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="https://kanjitest.online">KanjiTest.Online</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="https://kanjitest.online">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="https://kanjitest.online/about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="https://kanjitest.online/contact">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" href="https://kanjitest.online/blog">Blog</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container my-4">
+    <div class="row">
+      <div class="col-12 d-flex justify-content-center">
+        <div class="not-found-container">
+          <h1>404</h1>
+          <p>Oops! Page Not Found</p>
+          <a href="/" class="btn btn-primary mt-3">Back to Home</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer-bg text-white py-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center mb-3">
+          <ul class="list-unstyled d-flex justify-content-center gap-3">
+            <li><a href="about.html" class="text-white text-decoration-none">About</a></li>
+            <li><a href="contact.html" class="text-white text-decoration-none">Contact</a></li>
+            <li><a href="privacy.html" class="text-white text-decoration-none">Privacy Policy</a></li>
+            <li><a href="disclaimer.html" class="text-white text-decoration-none">Disclaimer</a></li>
+          </ul>
+        </div>
+        <div class="col-12 text-center">
+          <p class="text-muted small mb-0">&copy; 2025 KanjiTest.Online. All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
