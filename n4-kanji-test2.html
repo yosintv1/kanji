@@ -4,15 +4,15 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Free JLPT N4 Kanji Test 2 - Practice Japanese Kanji Online | KanjiTest.Online</title>
-  <meta name="description" content="Practice for your JLPT N4 exam with our free Kanji test #2. Includes 20 questions with answers, explanations, and interactive learning features for Japanese intermediate learners." />
+  <meta name="description" content="Continue your JLPT N4 practice with our free Kanji test #2. Features 20 new questions with answers, explanations, and interactive learning tools for intermediate Japanese learners." />
   <meta name="keywords" content="JLPT N4, Kanji test, Japanese language test, free Kanji quiz, N4 practice test, Japanese kanji for intermediate" />
   <meta name="author" content="KanjiTest.Online" />
   <meta name="robots" content="index, follow" />
-  <link href='/favicon.ico' rel='icon' type='image/x-icon'/>
   <link rel="canonical" href="/n4-kanji-test2" />
+  <link href='/favicon.ico' rel='icon' type='image/x-icon'/>
   
   <meta property="og:title" content="Free JLPT N4 Kanji Test 2 - Practice Japanese Kanji Online" />
-  <meta property="og:description" content="Practice for your JLPT N4 exam with our free Kanji test #2. Includes 20 questions with answers and explanations." />
+  <meta property="og:description" content="Continue your JLPT N4 practice with our free Kanji test #2. Features 20 new questions with answers and explanations." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="/n4-kanji-test2" />
   <meta property="og:image" content="/image.jpg" />
@@ -20,7 +20,7 @@
   
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Free JLPT N4 Kanji Test 2 - Practice Japanese Kanji Online" />
-  <meta name="twitter:description" content="Practice for your JLPT N4 exam with our free Kanji test #2. Includes 20 questions with answers and explanations." />
+  <meta name="twitter:description" content="Continue your JLPT N4 practice with our free Kanji test #2. Features 20 new questions with answers and explanations." />
   <meta name="twitter:image" content="/image.jpg" />
   
   <script type="application/ld+json">
@@ -34,21 +34,21 @@
       {
         "@type": "Question",
         "eduQuestionType": "Multiple choice",
-        "text": "What is the reading for 漢字 in this sentence: 日本語の漢字は難しいです。",
-        "answerExplanation": "漢字 is read as かんじ (kanji) meaning kanji characters.",
+        "text": "What is the reading for 意味 in this sentence: この言葉の漢字の読みを意味を教えてください。",
+        "answerExplanation": "意味 is read as いみ (imi) meaning meaning.",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "かんじ"
+          "text": "いみ"
         }
       },
       {
         "@type": "Question",
         "eduQuestionType": "Multiple choice",
-        "text": "What is the reading for 終わりに in this sentence: 終わりに質問はありますか。",
-        "answerExplanation": "終わりに is read as おわりに (owari ni) meaning at the end.",
+        "text": "What is the reading for 部屋 in this sentence: 毎日掃除をしないと部屋が汚れるよ。",
+        "answerExplanation": "部屋 is read as へや (heya) meaning room.",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "おわりに"
+          "text": "へや"
         }
       }
     ],
@@ -59,7 +59,7 @@
   </script>
   
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
-    <style>
+  <style>
     body {
       background-color: #FFFFFF;
       color: #000;
@@ -86,7 +86,7 @@
       box-shadow: 2px 0 8px rgb(74 44 42 / 0.1);
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       border-radius: 8px 0 0 8px;
-      margin-top: 80px; /* shift sidebar down */
+      margin-top: 80px;
     }
     .sidebar h5 {
       color: #4A2C2A;
@@ -126,7 +126,6 @@
       border-radius: 8px;
       background: #f1f1f1;
 
-      /* 2x2 grid layout */
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       gap: 10px 15px;
@@ -161,7 +160,7 @@
       background-color: #1a1a1a;
     }
     .text-muted {
-      color: #bbb !important; /* ensure visible */
+      color: #bbb !important;
     }
     header, .container {
       max-width: 900px;
@@ -195,10 +194,10 @@
     
 <script>
   const answers = [
-    'かんじ', 'おわり', 'はじ', 'おも', 'かる',
-    'ふと', 'ほそ', 'ちか', 'とお', 'おくり',
-    'むか', 'かえ', 'しょく', 'しん', 'とく',
-    'とく', 'みせ', 'えき', 'お', 'し'
+    'りょう', 'いみ', 'はこ', 'みせ', 'てき',
+    'へや', 'むら', 'どう', 'きょう', 'げき',
+    'こん', 'み', 'し', 'かい', 'けん',
+    'しず', 'おん', 'か', 'な', 'とく'
   ];
   let answered = Array(answers.length).fill(false);
   let userAnswers = Array(answers.length).fill(null);
@@ -269,182 +268,182 @@
     <h2 class="mb-4">Free JLPT N4 Kanji - Test 2</h2>
     <form id="quiz-form" onsubmit="return false;">
       <div class="question">
-        <p>1. <fg t="にほんご">日本語</fg>の<b><u>漢字</u></b>は<fg t="むずか">難</fg>しいです。</p>
-        <button type="button" class="btn btn-outline-primary quiz-option" onclick="checkAnswer(this, 'かんじ', 0)">かんじ</button>
-        <button type="button" class="btn btn-outline-primary quiz-option" onclick="checkAnswer(this, 'かんじ', 0)">かんじ</button>
-        <button type="button" class="btn btn-outline-primary quiz-option" onclick="checkAnswer(this, 'かんじ', 0)">かんじ</button>
-        <button type="button" class="btn btn-outline-primary quiz-option" onclick="checkAnswer(this, 'かんじ', 0)">かんじ</button>
+        <p>1. <fg t="おとうと">弟</fg>は<fg t="りょうしん">両親</fg>に<fg t="にた">似</fg>ています。</p>
+        <button type="button" class="btn btn-outline-primary quiz-option" onclick="checkAnswer(this, 'りょう', 0)">りょう</button>
+        <button type="button" class="btn btn-outline-primary quiz-option" onclick="checkAnswer(this, 'ふた', 0)">ふた</button>
+        <button type="button" class="btn btn-outline-primary quiz-option" onclick="checkAnswer(this, 'りょうしん', 0)">りょうしん</button>
+        <button type="button" class="btn btn-outline-primary quiz-option" onclick="checkAnswer(this, 'りょうり', 0)">りょうり</button>
         <div class="feedback" id="feedback-0"></div>
       </div>
 
       <div class="question">
-        <p>2. <fg t="かいぎ">会議</fg>の<b><u>終わりに</u></b>、<fg t="しつもん">質問</fg>はありますか。</p>
-        <button type="button" class="btn btn-outline-primary quiz-option" onclick="checkAnswer(this, 'おわり', 1)">おわり</button>
-        <button type="button" class="btn btn-outline-primary quiz-option" onclick="checkAnswer(this, 'おわり', 1)">おわり</button>
-        <button type="button" class="btn btn-outline-primary quiz-option" onclick="checkAnswer(this, 'おわり', 1)">おわり</button>
-        <button type="button" class="btn btn-outline-primary quiz-option" onclick="checkAnswer(this, 'おわり', 1)">おわり</button>
+        <p>2. この<fg t="ことば">言葉</fg>の<b><u>意味</u></b>を<fg t="おし">教</fg>えてください。</p>
+        <button type="button" class="btn btn-outline-primary quiz-option" onclick="checkAnswer(this, 'いみ', 1)">いみ</button>
+        <button type="button" class="btn btn-outline-primary quiz-option" onclick="checkAnswer(this, 'きみ', 1)">きみ</button>
+        <button type="button" class="btn btn-outline-primary quiz-option" onclick="checkAnswer(this, 'いぎ', 1)">いぎ</button>
+        <button type="button" class="btn btn-outline-primary quiz-option" onclick="checkAnswer(this, 'み', 1)">み</button>
         <div class="feedback" id="feedback-1"></div>
       </div>
 
       <div class="question">
-        <p>3. <fg t="かいぎ">会議</fg>は<fg t="ごぜんくじ">午前９時</fg>に<b><u>始まり</u></b>ます。</p>
-        <button type="button" class="btn btn-outline-primary quiz-option" onclick="checkAnswer(this, 'はじ', 2)">はじ</button>
-        <button type="button" class="btn btn-outline-primary quiz-option" onclick="checkAnswer(this, 'かい', 2)">かい</button>
-        <button type="button" class="btn btn-outline-primary quiz-option" onclick="checkAnswer(this, 'おわり', 2)">おわり</button>
-        <button type="button" class="btn btn-outline-primary quiz-option" onclick="checkAnswer(this, 'はじ', 2)">はじ</button>
+        <p>3. <fg t="おお">大</fg>きな<b><u>箱</u></b>を<fg t="はこ">運</fg>びます。</p>
+        <button type="button" class="btn btn-outline-primary quiz-option" onclick="checkAnswer(this, 'はこ', 2)">はこ</button>
+        <button type="button" class="btn btn-outline-primary quiz-option" onclick="checkAnswer(this, 'ばこ', 2)">ばこ</button>
+        <button type="button" class="btn btn-outline-primary quiz-option" onclick="checkAnswer(this, 'そう', 2)">そう</button>
+        <button type="button" class="btn btn-outline-primary quiz-option" onclick="checkAnswer(this, 'はこび', 2)">はこび</button>
         <div class="feedback" id="feedback-2"></div>
       </div>
 
       <div class="question">
-        <p>4. <fg t="この">この</fg><fg t="にほんご">日本語</fg>の<b><u>ほん</u></b>は<fg t="とても">とても</fg><fg t="おも">重</fg>いです。</p>
-        <button type="button" class="btn btn-outline-primary quiz-option" onclick="checkAnswer(this, 'おも', 3)">おも</button>
-        <button type="button" class="btn btn-outline-primary quiz-option" onclick="checkAnswer(this, 'かる', 3)">かる</button>
-        <button type="button" class="btn btn-outline-primary quiz-option" onclick="checkAnswer(this, 'おも', 3)">おも</button>
-        <button type="button" class="btn btn-outline-primary quiz-option" onclick="checkAnswer(this, 'おも', 3)">おも</button>
+        <p>4. <fg t="みせ">店</fg>の<fg t="なま">中</fg>に<fg t="はい">入</fg>ってはいけません。</p>
+        <button type="button" class="btn btn-outline-primary quiz-option" onclick="checkAnswer(this, 'てん', 3)">てん</button>
+        <button type="button" class="btn btn-outline-primary quiz-option" onclick="checkAnswer(this, 'みせ', 3)">みせ</button>
+        <button type="button" class="btn btn-outline-primary quiz-option" onclick="checkAnswer(this, 'いりぐち', 3)">いりぐち</button>
+        <button type="button" class="btn btn-outline-primary quiz-option" onclick="checkAnswer(this, 'まち', 3)">まち</button>
         <div class="feedback" id="feedback-3"></div>
       </div>
 
       <div class="question">
-        <p>5. <fg t="この">この</fg><fg t="かばん">鞄</fg>はとても<fg t="かる">軽</fg>いです。</p>
-        <button type="button" class="btn btn-outline-primary quiz-option" onclick="checkAnswer(this, 'おも', 4)">おも</button>
-        <button type="button" class="btn btn-outline-primary quiz-option" onclick="checkAnswer(this, 'かる', 4)">かる</button>
-        <button type="button" class="btn btn-outline-primary quiz-option" onclick="checkAnswer(this, 'かる', 4)">かる</button>
-        <button type="button" class="btn btn-outline-primary quiz-option" onclick="checkAnswer(this, 'かる', 4)">かる</button>
+        <p>5. <fg t="かあさん">母さん</fg>は<fg t="りょうり">料理</fg>が<b><u>得</u></b>意です。</p>
+        <button type="button" class="btn btn-outline-primary quiz-option" onclick="checkAnswer(this, 'とく', 4)">とく</button>
+        <button type="button" class="btn btn-outline-primary quiz-option" onclick="checkAnswer(this, 'え', 4)">え</button>
+        <button type="button" class="btn btn-outline-primary quiz-option" onclick="checkAnswer(this, 'とくい', 4)">とくい</button>
+        <button type="button" class="btn btn-outline-primary quiz-option" onclick="checkAnswer(this, 'てき', 4)">てき</button>
         <div class="feedback" id="feedback-4"></div>
       </div>
 
       <div class="question">
-        <p>6. <fg t="ふと">太</fg>い<fg t="せんせい">先生</fg>に<fg t="あい">会</fg>いました。</p>
-        <button type="button" class="btn btn-outline-primary quiz-option" onclick="checkAnswer(this, 'ふと', 5)">ふと</button>
-        <button type="button" class="btn btn-outline-primary quiz-option" onclick="checkAnswer(this, 'ほそ', 5)">ほそ</button>
-        <button type="button" class="btn btn-outline-primary quiz-option" onclick="checkAnswer(this, 'ふと', 5)">ふと</button>
-        <button type="button" class="btn btn-outline-primary quiz-option" onclick="checkAnswer(this, 'ふと', 5)">ふと</button>
+        <p>6. <fg t="わたしの">私の</fg><b><u>部屋</u></b>は<fg t="と">戸</fg>が<fg t="おお">多</fg>いです。</p>
+        <button type="button" class="btn btn-outline-primary quiz-option" onclick="checkAnswer(this, 'へや', 5)">へや</button>
+        <button type="button" class="btn btn-outline-primary quiz-option" onclick="checkAnswer(this, 'ぶや', 5)">ぶや</button>
+        <button type="button" class="btn btn-outline-primary quiz-option" onclick="checkAnswer(this, 'や', 5)">や</button>
+        <button type="button" class="btn btn-outline-primary quiz-option" onclick="checkAnswer(this, 'しつ', 5)">しつ</button>
         <div class="feedback" id="feedback-5"></div>
       </div>
 
       <div class="question">
-        <p>7. <fg t="ほそ">細</fg>い<fg t="いぬ">犬</fg>を<fg t="み">見</fg>ました。</p>
-        <button type="button" class="btn btn-outline-primary quiz-option" onclick="checkAnswer(this, 'ほそ', 6)">ほそ</button>
-        <button type="button" class="btn btn-outline-primary quiz-option" onclick="checkAnswer(this, 'ふと', 6)">ふと</button>
-        <button type="button" class="btn btn-outline-primary quiz-option" onclick="checkAnswer(this, 'ほそ', 6)">ほそ</button>
-        <button type="button" class="btn btn-outline-primary quiz-option" onclick="checkAnswer(this, 'ほそ', 6)">ほそ</button>
+        <p>7. <fg t="この">この</fg><b><u>村</u></b>には<fg t="ちい">小</fg>さな<fg t="かわ">川</fg>があります。</p>
+        <button type="button" class="btn btn-outline-primary quiz-option" onclick="checkAnswer(this, 'そん', 6)">そん</button>
+        <button type="button" class="btn btn-outline-primary quiz-option" onclick="checkAnswer(this, 'むら', 6)">むら</button>
+        <button type="button" class="btn btn-outline-primary quiz-option" onclick="checkAnswer(this, 'むらさき', 6)">むらさき</button>
+        <button type="button" class="btn btn-outline-primary quiz-option" onclick="checkAnswer(this, 'まち', 6)">まち</button>
         <div class="feedback" id="feedback-6"></div>
       </div>
 
       <div class="question">
-        <p>8. <fg t="いえ">家</fg>の<fg t="ちかく">近く</fg>に<fg t="みせ">店</fg>があります。</p>
-        <button type="button" class="btn btn-outline-primary quiz-option" onclick="checkAnswer(this, 'ちか', 7)">ちか</button>
-        <button type="button" class="btn btn-outline-primary quiz-option" onclick="checkAnswer(this, 'とお', 7)">とお</button>
-        <button type="button" class="btn btn-outline-primary quiz-option" onclick="checkAnswer(this, 'ちか', 7)">ちか</button>
-        <button type="button" class="btn btn-outline-primary quiz-option" onclick="checkAnswer(this, 'ちか', 7)">ちか</button>
+        <p>8. <fg t="いぬ">犬</fg>が<fg t="みち">道</fg>を<b><u>歩</u></b>いています。</p>
+        <button type="button" class="btn btn-outline-primary quiz-option" onclick="checkAnswer(this, 'ある', 7)">ある</button>
+        <button type="button" class="btn btn-outline-primary quiz-option" onclick="checkAnswer(this, 'ふ', 7)">ふ</button>
+        <button type="button" class="btn btn-outline-primary quiz-option" onclick="checkAnswer(this, 'どう', 7)">どう</button>
+        <button type="button" class="btn btn-outline-primary quiz-option" onclick="checkAnswer(this, 'ほ', 7)">ほ</button>
         <div class="feedback" id="feedback-7"></div>
       </div>
 
       <div class="question">
-        <p>9. <fg t="この">この</fg><fg t="みち">道</fg>はとても<fg t="とお">遠</fg>いです。</p>
-        <button type="button" class="btn btn-outline-primary quiz-option" onclick="checkAnswer(this, 'とお', 8)">とお</button>
-        <button type="button" class="btn btn-outline-primary quiz-option" onclick="checkAnswer(this, 'とお', 8)">とお</button>
-        <button type="button" class="btn btn-outline-primary quiz-option" onclick="checkAnswer(this, 'ちか', 8)">ちか</button>
-        <button type="button" class="btn btn-outline-primary quiz-option" onclick="checkAnswer(this, 'とお', 8)">とお</button>
+        <p>9. <fg t="みち">道</fg>を<b><u>教</u></b>えてください。</p>
+        <button type="button" class="btn btn-outline-primary quiz-option" onclick="checkAnswer(this, 'おし', 8)">おし</button>
+        <button type="button" class="btn btn-outline-primary quiz-option" onclick="checkAnswer(this, 'なら', 8)">なら</button>
+        <button type="button" class="btn btn-outline-primary quiz-option" onclick="checkAnswer(this, 'きょう', 8)">きょう</button>
+        <button type="button" class="btn btn-outline-primary quiz-option" onclick="checkAnswer(this, 'きょうえ', 8)">きょうえ</button>
         <div class="feedback" id="feedback-8"></div>
       </div>
 
       <div class="question">
-        <p>10. <fg t="ともだち">友達</fg>を<fg t="えき">駅</fg>まで<fg t="おくり">送り</fg>ました。</p>
-        <button type="button" class="btn btn-outline-primary quiz-option" onclick="checkAnswer(this, 'おくり', 9)">おくり</button>
-        <button type="button" class="btn btn-outline-primary quiz-option" onclick="checkAnswer(this, 'むか', 9)">むか</button>
-        <button type="button" class="btn btn-outline-primary quiz-option" onclick="checkAnswer(this, 'おくり', 9)">おくり</button>
-        <button type="button" class="btn btn-outline-primary quiz-option" onclick="checkAnswer(this, 'おくり', 9)">おくり</button>
+        <p>10. この<fg t="としょかん">図書館</fg>は<fg t="りゅうがくせい">留学生</fg>のために<fg t="特別">とくべつ</fg>な<b><u>劇場</u></b>を<fg t="つく">作</fg>ります。</p>
+        <button type="button" class="btn btn-outline-primary quiz-option" onclick="checkAnswer(this, 'げき', 9)">げき</button>
+        <button type="button" class="btn btn-outline-primary quiz-option" onclick="checkAnswer(this, 'じょう', 9)">じょう</button>
+        <button type="button" class="btn btn-outline-primary quiz-option" onclick="checkAnswer(this, 'きょう', 9)">きょう</button>
+        <button type="button" class="btn btn-outline-primary quiz-option" onclick="checkAnswer(this, 'はこ', 9)">はこ</button>
         <div class="feedback" id="feedback-9"></div>
       </div>
 
       <div class="question">
-        <p>11. <fg t="ともだち">友達</fg>を<fg t="むか">迎え</fg>に<fg t="い">行</fg>きます。</p>
-        <button type="button" class="btn btn-outline-primary quiz-option" onclick="checkAnswer(this, 'むか', 10)">むか</button>
-        <button type="button" class="btn btn-outline-primary quiz-option" onclick="checkAnswer(this, 'おくり', 10)">おくり</button>
-        <button type="button" class="btn btn-outline-primary quiz-option" onclick="checkAnswer(this, 'むか', 10)">むか</button>
-        <button type="button" class="btn btn-outline-primary quiz-option" onclick="checkAnswer(this, 'むか', 10)">むか</button>
+        <p>11. <fg t="この">この</fg><fg t="いぬ">犬</fg>は<fg t="とく">特</fg>に<fg t="まいにち">毎日</fg><fg t="にんぎょう">人形</fg>を<fg t="も">持</fg>ちます。<b><u>今</u></b>、<fg t="かれ">彼</fg>は<fg t="なに">何</fg>をしていますか。</p>
+        <button type="button" class="btn btn-outline-primary quiz-option" onclick="checkAnswer(this, 'いま', 10)">いま</button>
+        <button type="button" class="btn btn-outline-primary quiz-option" onclick="checkAnswer(this, 'きょ', 10)">きょ</button>
+        <button type="button" class="btn btn-outline-primary quiz-option" onclick="checkAnswer(this, 'こん', 10)">こん</button>
+        <button type="button" class="btn btn-outline-primary quiz-option" onclick="checkAnswer(this, 'ちか', 10)">ちか</button>
         <div class="feedback" id="feedback-10"></div>
       </div>
 
       <div class="question">
-        <p>12. <fg t="ほん">本</fg>を<fg t="かえ">返し</fg>ました。</p>
-        <button type="button" class="btn btn-outline-primary quiz-option" onclick="checkAnswer(this, 'かえ', 11)">かえ</button>
-        <button type="button" class="btn btn-outline-primary quiz-option" onclick="checkAnswer(this, 'かえ', 11)">かえ</button>
-        <button type="button" class="btn btn-outline-primary quiz-option" onclick="checkAnswer(this, 'かえ', 11)">かえ</button>
-        <button type="button" class="btn btn-outline-primary quiz-option" onclick="checkAnswer(this, 'かえ', 11)">かえ</button>
+        <p>12. <fg t="この">この</fg><fg t="ほん">本</fg>は<fg t="いち">一</fg><b><u>冊</u></b><fg t="ななひゃくえん">七百円</fg>です。</p>
+        <button type="button" class="btn btn-outline-primary quiz-option" onclick="checkAnswer(this, 'さつ', 11)">さつ</button>
+        <button type="button" class="btn btn-outline-primary quiz-option" onclick="checkAnswer(this, 'み', 11)">み</button>
+        <button type="button" class="btn btn-outline-primary quiz-option" onclick="checkAnswer(this, 'かん', 11)">かん</button>
+        <button type="button" class="btn btn-outline-primary quiz-option" onclick="checkAnswer(this, 'さっ', 11)">さっ</button>
         <div class="feedback" id="feedback-11"></div>
       </div>
 
       <div class="question">
-        <p>13. <fg t="しょくどう">食堂</fg>で<fg t="ごはん">ご飯</fg>を<fg t="た">食</fg>べました。</p>
-        <button type="button" class="btn btn-outline-primary quiz-option" onclick="checkAnswer(this, 'しょく', 12)">しょく</button>
-        <button type="button" class="btn btn-outline-primary quiz-option" onclick="checkAnswer(this, 'しょく', 12)">しょく</button>
-        <button type="button" class="btn btn-outline-primary quiz-option" onclick="checkAnswer(this, 'しょく', 12)">しょく</button>
-        <button type="button" class="btn btn-outline-primary quiz-option" onclick="checkAnswer(this, 'しょく', 12)">しょく</button>
+        <p>13. <fg t="わたし">私</fg>の<fg t="しゅみ">趣味</fg>は<fg t="ピアノ">ピアノ</fg>を<fg t="ひ">弾</fg>くことです。それは<fg t="とても">とても</fg><b><u>静</u></b>かです。</p>
+        <button type="button" class="btn btn-outline-primary quiz-option" onclick="checkAnswer(this, 'せい', 12)">せい</button>
+        <button type="button" class="btn btn-outline-primary quiz-option" onclick="checkAnswer(this, 'しず', 12)">しず</button>
+        <button type="button" class="btn btn-outline-primary quiz-option" onclick="checkAnswer(this, 'し', 12)">し</button>
+        <button type="button" class="btn btn-outline-primary quiz-option" onclick="checkAnswer(this, 'だん', 12)">だん</button>
         <div class="feedback" id="feedback-12"></div>
       </div>
 
       <div class="question">
-        <p>14. <fg t="この">この</fg><fg t="みせ">店</fg>はとても<fg t="しんせつ">親切</fg>です。</p>
-        <button type="button" class="btn btn-outline-primary quiz-option" onclick="checkAnswer(this, 'しん', 13)">しん</button>
-        <button type="button" class="btn btn-outline-primary quiz-option" onclick="checkAnswer(this, 'しん', 13)">しん</button>
-        <button type="button" class="btn btn-outline-primary quiz-option" onclick="checkAnswer(this, 'しん', 13)">しん</button>
-        <button type="button" class="btn btn-outline-primary quiz-option" onclick="checkAnswer(this, 'しん', 13)">しん</button>
+        <p>14. <fg t="にほん">日本</fg>の<fg t="おお">大</fg>きな<fg t="まち">町</fg>には<fg t="みせ">店</fg>がたくさんあります。とくに<fg t="おいしい">美味しい</fg><fg t="たべもの">食べ物</fg>が<fg t="ある">ある</fg><b><u>場所</u></b>があります。</p>
+        <button type="button" class="btn btn-outline-primary quiz-option" onclick="checkAnswer(this, 'ばしょ', 13)">ばしょ</button>
+        <button type="button" class="btn btn-outline-primary quiz-option" onclick="checkAnswer(this, 'ところ', 13)">ところ</button>
+        <button type="button" class="btn btn-outline-primary quiz-option" onclick="checkAnswer(this, 'じょう', 13)">じょう</button>
+        <button type="button" class="btn btn-outline-primary quiz-option" onclick="checkAnswer(this, 'かい', 13)">かい</button>
         <div class="feedback" id="feedback-13"></div>
       </div>
 
       <div class="question">
-        <p>15. <fg t="この">この</fg><fg t="えいが">映画</fg>はとても<fg t="とくべつ">特別</fg>です。</p>
-        <button type="button" class="btn btn-outline-primary quiz-option" onclick="checkAnswer(this, 'とく', 14)">とく</button>
-        <button type="button" class="btn btn-outline-primary quiz-option" onclick="checkAnswer(this, 'とく', 14)">とく</button>
-        <button type="button" class="btn btn-outline-primary quiz-option" onclick="checkAnswer(this, 'とく', 14)">とく</button>
-        <button type="button" class="btn btn-outline-primary quiz-option" onclick="checkAnswer(this, 'とく', 14)">とく</button>
+        <p>15. <fg t="にほんご">日本語</fg>を<fg t="べんきょう">勉強</fg>するのは<fg t="むずか">難</fg>しいです。でも<fg t="がんば">頑張</fg>ります。そして<fg t="にほんご">日本語</fg>の<fg t="せんせい">先生</fg>と<fg t="たくさん">たくさん</fg><b><u>勉強</u></b>します。</p>
+        <button type="button" class="btn btn-outline-primary quiz-option" onclick="checkAnswer(this, 'べんきょう', 14)">べんきょう</button>
+        <button type="button" class="btn btn-outline-primary quiz-option" onclick="checkAnswer(this, 'けんきゅう', 14)">けんきゅう</button>
+        <button type="button" class="btn btn-outline-primary quiz-option" onclick="checkAnswer(this, 'がく', 14)">がく</button>
+        <button type="button" class="btn btn-outline-primary quiz-option" onclick="checkAnswer(this, 'きょう', 14)">きょう</button>
         <div class="feedback" id="feedback-14"></div>
       </div>
 
       <div class="question">
-        <p>16. <fg t="とても">とても</fg><fg t="とくべつ">特別</fg>な<fg t="ほん">本</fg>を<fg t="か">買</fg>いました。</p>
-        <button type="button" class="btn btn-outline-primary quiz-option" onclick="checkAnswer(this, 'とく', 15)">とく</button>
-        <button type="button" class="btn btn-outline-primary quiz-option" onclick="checkAnswer(this, 'とく', 15)">とく</button>
-        <button type="button" class="btn btn-outline-primary quiz-option" onclick="checkAnswer(this, 'とく', 15)">とく</button>
-        <button type="button" class="btn btn-outline-primary quiz-option" onclick="checkAnswer(this, 'とく', 15)">とく</button>
+        <p>16. <fg t="こんげつ">今月</fg>は<fg t="あたらしい">新しい</fg><fg t="へや">部屋</fg>に<fg t="ひっこ">引越</fg>しました。<fg t="いま">今</fg><fg t="わたしの">私の</fg><fg t="へや">部屋</fg>は<fg t="まだ">まだ</fg><b><u>静</u></b>かです。</p>
+        <button type="button" class="btn btn-outline-primary quiz-option" onclick="checkAnswer(this, 'しず', 15)">しず</button>
+        <button type="button" class="btn btn-outline-primary quiz-option" onclick="checkAnswer(this, 'せい', 15)">せい</button>
+        <button type="button" class="btn btn-outline-primary quiz-option" onclick="checkAnswer(this, 'しん', 15)">しん</button>
+        <button type="button" class="btn btn-outline-primary quiz-option" onclick="checkAnswer(this, 'おん', 15)">おん</button>
         <div class="feedback" id="feedback-15"></div>
       </div>
 
       <div class="question">
-        <p>17. <fg t="この">この</fg><fg t="みせ">店</fg>はとても<fg t="おい">美味</fg>しいです。</p>
-        <button type="button" class="btn btn-outline-primary quiz-option" onclick="checkAnswer(this, 'みせ', 16)">みせ</button>
-        <button type="button" class="btn btn-outline-primary quiz-option" onclick="checkAnswer(this, 'みせ', 16)">みせ</button>
-        <button type="button" class="btn btn-outline-primary quiz-option" onclick="checkAnswer(this, 'みせ', 16)">みせ</button>
-        <button type="button" class="btn btn-outline-primary quiz-option" onclick="checkAnswer(this, 'みせ', 16)">みせ</button>
+        <p>17. <fg t="けさ">今朝</fg>、<fg t="えき">駅</fg>で<fg t="ともだち">友達</fg>と<b><u>音楽</u></b>を<fg t="き">聞</fg>きました。</p>
+        <button type="button" class="btn btn-outline-primary quiz-option" onclick="checkAnswer(this, 'おん', 16)">おん</button>
+        <button type="button" class="btn btn-outline-primary quiz-option" onclick="checkAnswer(this, 'がく', 16)">がく</button>
+        <button type="button" class="btn btn-outline-primary quiz-option" onclick="checkAnswer(this, 'きょく', 16)">きょく</button>
+        <button type="button" class="btn btn-outline-primary quiz-option" onclick="checkAnswer(this, 'おんがく', 16)">おんがく</button>
         <div class="feedback" id="feedback-16"></div>
       </div>
 
       <div class="question">
-        <p>18. <fg t="えき">駅</fg>まで<fg t="ある">歩</fg>いて<fg t="い">行</fg>きます。</p>
-        <button type="button" class="btn btn-outline-primary quiz-option" onclick="checkAnswer(this, 'えき', 17)">えき</button>
-        <button type="button" class="btn btn-outline-primary quiz-option" onclick="checkAnswer(this, 'えき', 17)">えき</button>
-        <button type="button" class="btn btn-outline-primary quiz-option" onclick="checkAnswer(this, 'えき', 17)">えき</button>
-        <button type="button" class="btn btn-outline-primary quiz-option" onclick="checkAnswer(this, 'えき', 17)">えき</button>
+        <p>18. <fg t="みち">道</fg>に<fg t="おおき">大き</fg>な<fg t="いし">石</fg>が<fg t="ある">ある</fg>ので、<fg t="ちゅうい">注意</fg>してください。</p>
+        <button type="button" class="btn btn-outline-primary quiz-option" onclick="checkAnswer(this, 'いし', 17)">いし</button>
+        <button type="button" class="btn btn-outline-primary quiz-option" onclick="checkAnswer(this, 'いわ', 17)">いわ</button>
+        <button type="button" class="btn btn-outline-primary quiz-option" onclick="checkAnswer(this, 'か', 17)">か</button>
+        <button type="button" class="btn btn-outline-primary quiz-option" onclick="checkAnswer(this, 'いし', 17)">いし</button>
         <div class="feedback" id="feedback-17"></div>
       </div>
 
       <div class="question">
-        <p>19. <fg t="この">この</fg><fg t="みち">道</fg>はとても<fg t="おも">重</fg>いです。</p>
-        <button type="button" class="btn btn-outline-primary quiz-option" onclick="checkAnswer(this, 'お', 18)">お</button>
+        <p>19. <fg t="あか">赤</fg>くて<fg t="きれい">奇麗</fg>な<b><u>花</u></b>を<fg t="か">買</fg>いました。</p>
+        <button type="button" class="btn btn-outline-primary quiz-option" onclick="checkAnswer(this, 'はな', 18)">はな</button>
         <button type="button" class="btn btn-outline-primary quiz-option" onclick="checkAnswer(this, 'か', 18)">か</button>
-        <button type="button" class="btn btn-outline-primary quiz-option" onclick="checkAnswer(this, 'お', 18)">お</button>
-        <button type="button" class="btn btn-outline-primary quiz-option" onclick="checkAnswer(this, 'お', 18)">お</button>
+        <button type="button" class="btn btn-outline-primary quiz-option" onclick="checkAnswer(this, 'ばな', 18)">ばな</button>
+        <button type="button" class="btn btn-outline-primary quiz-option" onclick="checkAnswer(this, 'はな', 18)">はな</button>
         <div class="feedback" id="feedback-18"></div>
       </div>
 
       <div class="question">
-        <p>20. <fg t="とても">とても</fg><fg t="しあわ">幸</fg>せです。</p>
-        <button type="button" class="btn btn-outline-primary quiz-option" onclick="checkAnswer(this, 'し', 19)">し</button>
-        <button type="button" class="btn btn-outline-primary quiz-option" onclick="checkAnswer(this, 'し', 19)">し</button>
-        <button type="button" class="btn btn-outline-primary quiz-option" onclick="checkAnswer(this, 'し', 19)">し</button>
-        <button type="button" class="btn btn-outline-primary quiz-option" onclick="checkAnswer(this, 'し', 19)">し</button>
+        <p>20. <fg t="りょこう">旅行</fg>で<fg t="おみやげ">お土産</fg>をたくさん<fg t="か">買</fg>いました。<fg t="特に">とくに</fg><b><u>特</u></b>に<fg t="おいしい">美味しい</fg><fg t="たべもの">食べ物</fg>を<fg t="か">買</fg>いました。</p>
+        <button type="button" class="btn btn-outline-primary quiz-option" onclick="checkAnswer(this, 'とく', 19)">とく</button>
+        <button type="button" class="btn btn-outline-primary quiz-option" onclick="checkAnswer(this, 'とくべつ', 19)">とくべつ</button>
+        <button type="button" class="btn btn-outline-primary quiz-option" onclick="checkAnswer(this, 'え', 19)">え</button>
+        <button type="button" class="btn btn-outline-primary quiz-option" onclick="checkAnswer(this, 'だい', 19)">だい</button>
         <div class="feedback" id="feedback-19"></div>
       </div>
     </form>
